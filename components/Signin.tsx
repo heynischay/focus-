@@ -58,6 +58,7 @@ export function SignIn({ setTab }: { setTab: Dispatch<SetStateAction<"signin" | 
 
       setError(error);
     } else {
+      console.log("redirecting to session page")
       router.push("/session");
     }
   };
